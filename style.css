@@ -51,7 +51,7 @@ html {
 
 /*-------LANDING PAGE-------*/
 .hero {
-    background-image: url(../assets/heroAirplaneWing.jpg);
+    background-image: url(assets/heroAirplaneWing.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ html {
 /* -------DIVIDER-------*/
 .divider {
     background-color: white;
-    background-image: url(../assets/airplaneWing.jpg);
+    background-image: url(assets/airplaneWing.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -187,20 +187,26 @@ html {
     box-shadow: 0 10px 10px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-/* -------PROJECT GRID RESPONSIVE BREAKPOINTS------- */
-@media only screen and (min-width: 768px) {
-    .card-img-top {
-        width: 100%;
-        height: 36vw;
-        object-fit: cover;
-    }
+.card-img-top {
+    width: 100%;
+    height: 13vw;
+    object-fit: cover;
 }
 
+/* -------PROJECT GRID RESPONSIVE BREAKPOINTS------- */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 767px) {
     .card-img-top {
         width: 100%;
         height: 75vw;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card-img-top {
+        width: 100%;
+        height: 36vw;
         object-fit: cover;
     }
 }
