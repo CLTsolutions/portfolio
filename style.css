@@ -211,7 +211,7 @@ html {
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Lg devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .card-img-top {
         width: 100%;
@@ -220,11 +220,20 @@ html {
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* XL devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .card-img-top {
         width: 100%;
-        height: 13vw;
+        height: 25vw;
+        object-fit: cover;
+    }
+}
+
+/* XL devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    .card-img-top {
+        width: 100%;
+        height: 15vw;
         object-fit: cover;
     }
 }
