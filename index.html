@@ -1,240 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chelsey Tschida's Portfolio</title>
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/jpg" href="assets/favicon1.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon1.jpg" />
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
-    
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container-fluid d-flex">
-            <a class="navbar-brand mr-auto" href="#about">
-                <img src="assets/chelseyBrandLogo.png" alt="Logo" class="pl-3">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav mr-auto">
-                    <a class="nav-link pl-3" href="#resume">Web Developer</a>
-                </div>
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link p-3" href="#">Home<span class="sr-only">(current)</span></a>
-                    <a class="nav-link p-3" href="#about">About</a>
-                    <a class="nav-link p-3" href="#skills">Skills</a>
-                    <a class="nav-link p-3" href="#resume">Resume</a>
-                    <a class="nav-link p-3" href="#projects">Projects</a>
-                    <a class="nav-link p-3" href="#contact">Contact</a>
-                </div>
-            </div>
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand mr-auto" href="#about">
+          <img src="assets/chelseyBrandLogo.png" alt="Logo" class="pl-3" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav mr-auto">
+            <a class="nav-link pl-3" href="#resume">Web Developer</a>
+          </div>
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link p-3" href="#"
+              >Home<span class="sr-only">(current)</span></a
+            >
+            <a class="nav-link p-3" href="#about">About</a>
+            <a class="nav-link p-3" href="#skills">Skills</a>
+            <a class="nav-link p-3" href="#resume">Resume</a>
+            <a class="nav-link p-3" href="#projects">Projects</a>
+            <a class="nav-link p-3" href="#contact">Contact</a>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- HERO LANDING PAGE -->
     <div class="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <div class="caption text-center">
-                    <img src="assets/helloWorldLogo.png" alt="Hero Logo" class="img-fluid">
-                    <!-- <h1>Hello, World!</h1>
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <div class="caption text-center">
+            <img
+              src="assets/helloWorldLogo.png"
+              alt="Hero Logo"
+              class="img-fluid"
+            />
+            <!-- <h1>Hello, World!</h1>
                     <h1 class="display-2">I'm Chelsey Tschida</h1> -->
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- ABOUT -->
     <article class="padding" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 my-md-auto">
-                    <img src="assets/chelseyAboutMeImg.JPG" class="img-fluid rounded" alt="Responsive image Chelsey in Flight Deck">
-                </div>
-                <div class="col-md-6 ml-auto text-justify">
-                    <p class="lead mt-4">For the past decade, I have been a flight attendant. It has been an unique and rewarding experience as I have been able to travel all over the world, live in several different cities and states, and interact with people from all walks of life. While the Coronavirus pandemic has left me grounded, it has given me an opportunity to pursue a career in web development, an interest I have had for the past several years.
-                    <br>
-                    <br>
-                    During this down time, I enrolled in <a href="https://elevenfifty.org/" target="blank"  class="about-me-link text-muted">Eleven Fifty's</a> web development program. While it has been challenging to be a student again at this point in my life, it has also been very fulfilling and exciting. I cannot wait to see what this next adventure brings! Find out more on <a href="https://www.linkedin.com/in/cltschida/" target="blank"  class="about-me-link text-muted">LinkedIn.</a></p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 my-md-auto">
+            <img
+              src="assets/chelseyAboutMeImg.JPG"
+              class="img-fluid rounded"
+              alt="Responsive image Chelsey in Flight Deck"
+            />
+          </div>
+          <div class="col-md-6 ml-auto text-justify">
+            <p class="lead mt-4">
+              For the past decade, I have been a flight attendant. It has been
+              an unique and rewarding experience as I have been able to travel
+              all over the world, live in several different cities and states,
+              and interact with people from all walks of life. While the
+              Coronavirus pandemic has left me grounded, it has given me an
+              opportunity to pursue a career in web development, an interest I
+              have had for the past several years.
+              <br />
+              <br />
+              During this down time, I enrolled in
+              <a
+                href="https://elevenfifty.org/"
+                target="blank"
+                class="about-me-link text-muted"
+                >Eleven Fifty's</a
+              >
+              web development program. While it has been challenging to be a
+              student again at this point in my life, it has also been very
+              fulfilling and exciting. I cannot wait to see what this next
+              adventure brings! Find out more on
+              <a
+                href="https://www.linkedin.com/in/cltschida/"
+                target="blank"
+                class="about-me-link text-muted"
+                >LinkedIn.</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </article>
 
     <!-- SKILLS LIST -->
     <div class="jumbotron mb-0" id="skills">
-        <h1 class="display-4 text-center">SKILLS</h1>
-        <hr class="my-4">
-        <ul class="list-inline list-unstyled text-center">
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <i class="fab fa-html5 my-4"></i>
-            </li>
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <i class="fab fa-css3-alt my-4"></i>
-            </li>
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <i class="fab fa-js-square my-4"></i>
-            </li>
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <i class="fab fa-bootstrap my-4"></i>
-            </li>
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <a href="https://github.com/CLTsolutions" target="blank" class="github-list-link"><i class="fab fa-github-square my-4"></i></a>
-            </li>
-        </ul>
-        <ul class="list-inline list-unstyled text-center">
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <p class="skills-text">html</p>
-            </li>
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <p class="skills-text">css</p>
-            </li>
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <p class="skills-text">javascript</p>
-            </li>
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <p class="skills-text">bootstrap</p>
-            </li>
-            <li class="list-inline-item col-sm-2 col-md-2">
-                <p class="skills-text">github</p>
-            </li>
-        </ul>
-        <hr class="my-4">
+      <h1 class="display-4 text-center">SKILLS</h1>
+      <hr class="my-4" />
+      <ul class="list-inline list-unstyled text-center">
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <i class="fab fa-html5 my-4"></i>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <i class="fab fa-css3-alt my-4"></i>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <i class="fab fa-js-square my-4"></i>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <i class="fab fa-bootstrap my-4"></i>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <a
+            href="https://github.com/CLTsolutions"
+            target="blank"
+            class="github-list-link"
+            ><i class="fab fa-github-square my-4"></i
+          ></a>
+        </li>
+      </ul>
+      <ul class="list-inline list-unstyled text-center">
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">html</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">css</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">javascript</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">bootstrap</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">github</p>
+        </li>
+      </ul>
+      <hr class="my-4" />
     </div>
 
     <!-- PARALLAX SCROLLING DIVIDER -->
     <div class="divider" id="resume">
-        <div class="divider-overlay">
-            <div class="divider-content">
-                <div class="divider-caption text-center">
-                    <p class="lead">Download my resume, and be sure to check out my portfolio below.</p>
-                    <br>
-                    <a class="btn btn-outline-dark btn-lg text-uppercase" href="https://docs.google.com/document/d/1BmiRZQLdLnZM1bfevORSPrjYKcavayTncK5KLzvTnqs/edit?usp=sharing"  target="blank" role="button">resume</a>
-                </div>
-            </div>
+      <div class="divider-overlay">
+        <div class="divider-content">
+          <div class="divider-caption text-center">
+            <p class="lead">
+              Download my resume, and be sure to check out my portfolio below.
+            </p>
+            <br />
+            <a
+              class="btn btn-outline-dark btn-lg text-uppercase"
+              href="https://docs.google.com/document/d/1BmiRZQLdLnZM1bfevORSPrjYKcavayTncK5KLzvTnqs/edit?usp=sharing"
+              target="blank"
+              role="button"
+              >resume</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- PROJECTS GRID -->
     <div class="container pt-3" id="projects">
-        <!-- HEADING -->
-        <h1 class="my-4 text-center">Portfolio of Projects
-            <!-- <small>Secondary Text</small> -->
-        </h1>
-        <br>
-        <!-- GRID -->
-        <div class="row row-cols-md-2">
-            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                <div class="card h-100">
-                    <a href="https://codepen.io/cltsolutions/pen/zYByBma" target="blank"><img class="card-img-top img-thumbnail" src="assets/cssCreature.png" alt="Snowman created with HTML and CSS only"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">CSS Creature</h4>
-                        <p class="card-text">A Codepen snowman I created using only HTML and CSS.</p>
-                    </div>
-                </div>
+      <!-- HEADING -->
+      <h1 class="my-4 text-center">
+        Portfolio of Projects
+        <!-- <small>Secondary Text</small> -->
+      </h1>
+      <br />
+      <!-- GRID -->
+      <div class="row row-cols-md-2">
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card h-100">
+            <a href="https://codepen.io/cltsolutions/pen/zYByBma" target="blank"
+              ><img
+                class="card-img-top img-thumbnail"
+                src="assets/cssCreature.png"
+                alt="Snowman created with HTML and CSS only"
+            /></a>
+            <div class="card-body">
+              <h4 class="card-title">CSS Creature</h4>
+              <p class="card-text">
+                A Codepen snowman I created using only HTML and CSS.
+              </p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                <div class="card h-100">
-                    <a href="https://cltsolutions.github.io/static-layout/" target="blank"><img class="card-img-top img-thumbnail" src="assets/kastAppThumb2.png" alt="Static Layout Project"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">Static Website</h4>
-                        <p class="card-text">A recreation of a static website using only HTML and CSS. <a href="https://kastapp.co/" target="blank" class="thumbnail-caption-link text-muted font-weight-bold">Kast App</a> was my reference.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                <div class="card h-100">
-                    <a href="https://cltsolutions.github.io/efawd-api-project1/" target="blank"><img class="card-img-top img-thumbnail" src="assets/apiThumbRiver.png" alt="Link to github API Project"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">Lorem Picsum API Project</h4>
-                        <p class="card-text">An app utilizing vanilla Javascript to fetch random photos from <a href="https://picsum.photos/" target="blank" class="thumbnail-caption-link text-muted font-weight-bold">Lorem Picsum</a>. The returned information was then used to manipulate the DOM.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top img-thumbnail" src="assets/comingSoon.jpg" alt="Coming Soon Image Placeholder"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">API Project 2</h4>
-                        <p class="card-text">Coming Soon...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                <div class="card h-100">
-                    <a href="https://czc-thebarcart.herokuapp.com/" target="blank"><img class="card-img-top img-thumbnail" src="assets/barcart.png" alt="Screenshot of The Bar Cart App"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">The Bar Cart</h4>
-                        <p class="card-text">Built using the PERN stack and styled with Tailwind and Ant Design, this application implements full CRUD functionality. It calls on an <a href='https://www.thecocktaildb.com/' target='blank' class="thumbnail-caption-link text-muted font-weight-bold">external API</a> and allows users to search for their favorite cocktails and add them to their library.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top img-thumbnail" src="assets/comingSoon.jpg" alt="Coming Soon Image Placeholder"></a>
-                    <div class="card-body">
-                        <h4 class="card-title">Red Badge TBA</h4>
-                        <p class="card-text">Coming soon...</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card h-100">
+            <a
+              href="https://cltsolutions.github.io/static-layout/"
+              target="blank"
+              ><img
+                class="card-img-top img-thumbnail"
+                src="assets/kastAppThumb2.png"
+                alt="Static Layout Project"
+            /></a>
+            <div class="card-body">
+              <h4 class="card-title">Static Website</h4>
+              <p class="card-text">
+                A recreation of a static website using only HTML and CSS.
+                <a
+                  href="https://kastapp.co/"
+                  target="blank"
+                  class="thumbnail-caption-link text-muted font-weight-bold"
+                  >Kast App</a
+                >
+                was my reference.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card h-100">
+            <a
+              href="https://cltsolutions.github.io/efawd-api-project1/"
+              target="blank"
+              ><img
+                class="card-img-top img-thumbnail"
+                src="assets/apiThumbRiver.png"
+                alt="Link to github API Project"
+            /></a>
+            <div class="card-body">
+              <h4 class="card-title">Lorem Picsum API Project</h4>
+              <p class="card-text">
+                An app utilizing vanilla Javascript to fetch random photos from
+                <a
+                  href="https://picsum.photos/"
+                  target="blank"
+                  class="thumbnail-caption-link text-muted font-weight-bold"
+                  >Lorem Picsum</a
+                >. The returned information was then used to manipulate the DOM.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card h-100">
+            <a href="#"
+              ><img
+                class="card-img-top img-thumbnail"
+                src="assets/comingSoon.jpg"
+                alt="Coming Soon Image Placeholder"
+            /></a>
+            <div class="card-body">
+              <h4 class="card-title">API Project 2</h4>
+              <p class="card-text">Coming Soon...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card h-100">
+            <a href="https://czc-thebarcart.herokuapp.com/" target="blank"
+              ><img
+                class="card-img-top img-thumbnail"
+                src="assets/barcart.png"
+                alt="Screenshot of The Bar Cart App"
+            /></a>
+            <div class="card-body">
+              <h4 class="card-title">The Bar Cart</h4>
+              <p class="card-text">
+                Built using the PERN stack and styled with Tailwind and Ant
+                Design, this application implements full CRUD functionality. It
+                calls on an
+                <a
+                  href="https://www.thecocktaildb.com/"
+                  target="blank"
+                  class="thumbnail-caption-link text-muted font-weight-bold"
+                  >external API</a
+                >
+                and allows users to search for their favorite cocktails and add
+                them to their library.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card h-100">
+            <a href="#"
+              ><img
+                class="card-img-top img-thumbnail"
+                src="assets/comingSoon.jpg"
+                alt="Coming Soon Image Placeholder"
+            /></a>
+            <div class="card-body">
+              <h4 class="card-title">Red Badge TBA</h4>
+              <p class="card-text">Coming soon...</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- CONTACT FORM -->
-    <hr>
+    <hr />
     <div class="container form" id="contact">
-        <h2 class="text-center">Get in Touch</h2>
-        <form action="https://formspree.io/f/xayldgyy" method="POST">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name" name="name">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email" name="_replyto">
-            </div>
-            <div class="form-group">
-                <textarea name="message" class="form-control" rows='7' placeholder="Message"></textarea>
-            </div>
+      <h2 class="text-center">Get in Touch</h2>
+      <form action="https://formspree.io/f/xayldgyy" method="POST">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Name"
+            name="name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Email"
+            name="_replyto"
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            name="message"
+            class="form-control"
+            rows="7"
+            placeholder="Message"
+          ></textarea>
+        </div>
         <!-- your other form fields go here -->
-            <button type="submit" class="btn btn-outline-dark btn-md text-uppercase">Send</button>
-        </form>
+        <button
+          type="submit"
+          class="btn btn-outline-dark btn-md text-uppercase"
+        >
+          Send
+        </button>
+      </form>
     </div>
 
     <!-- FOOTER -->
     <footer class="footer text-light text-center py-3">
-        <div class="container text-center">
-            <ul class="list-inline list-unstyled text-center">
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/cltschida/" target="blank" class="linkedin-footer-link"><i class="fab fa-linkedin my-4"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://github.com/CLTsolutions" target="blank" class="github-footer-link"><i class="fab fa-github-square my-4"></i></a>
-                </li>
-            </ul>
-            <p class="copyright">
-                <a class="copy-link scroll top text-muted" href="#">&copy Chelsey Tschida 2020</a>
-            </p>
-        </div>
+      <div class="container text-center">
+        <ul class="list-inline list-unstyled text-center">
+          <li class="list-inline-item">
+            <a
+              href="https://www.linkedin.com/in/cltschida/"
+              target="blank"
+              class="linkedin-footer-link"
+              ><i class="fab fa-linkedin my-4"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://github.com/CLTsolutions"
+              target="blank"
+              class="github-footer-link"
+              ><i class="fab fa-github-square my-4"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="copyright">
+          <a class="copy-link scroll top text-muted" href="#"
+            >&copy Chelsey Tschida 2020</a
+          >
+        </p>
+      </div>
     </footer>
 
     <!-- BOOTSTRAP SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- MY SCRIPTS -->
-    <script src="porfolio.js"></script>
-
-</body>
+    <script src="portfolio.js"></script>
+  </body>
 </html>
