@@ -62,18 +62,12 @@
 
     <!-- HERO LANDING PAGE -->
     <div class="hero">
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <div class="caption text-center">
-            <img
-              src="assets/helloWorldLogo.png"
-              alt="Hero Logo"
-              class="img-fluid"
-            />
-            <!-- <h1>Hello, World!</h1>
-                    <h1 class="display-2">I'm Chelsey Tschida</h1> -->
-          </div>
-        </div>
+      <div class="hero-content">
+        <img
+          src="assets/helloWorldLogo.png"
+          alt="Hero Logo"
+          class="img-fluid"
+        />
       </div>
     </div>
 
@@ -170,21 +164,20 @@
 
     <!-- PARALLAX SCROLLING DIVIDER -->
     <div class="divider" id="resume">
-      <div class="divider-overlay">
-        <div class="divider-content">
-          <div class="divider-caption text-center">
-            <p class="lead">
-              Download my resume, and be sure to check out my portfolio below.
-            </p>
-            <br />
-            <a
-              class="btn btn-outline-dark btn-lg text-uppercase"
-              href="https://docs.google.com/document/d/1BmiRZQLdLnZM1bfevORSPrjYKcavayTncK5KLzvTnqs/edit?usp=sharing"
-              target="blank"
-              role="button"
-              >resume</a
-            >
-          </div>
+      <div class="divider-content">
+        <div class="divider-caption text-center">
+          <!-- lead is bootstrap for making the p stand out -->
+          <h1 class="lead">
+            Download my resume, and be sure to check out my portfolio below.
+          </h1>
+          <br />
+          <a
+            class="btn btn-outline-dark btn-lg text-uppercase"
+            href="https://docs.google.com/document/d/1BmiRZQLdLnZM1bfevORSPrjYKcavayTncK5KLzvTnqs/edit?usp=sharing"
+            target="blank"
+            role="button"
+            >resume</a
+          >
         </div>
       </div>
     </div>
@@ -382,9 +375,10 @@
           </li>
         </ul>
         <p class="copyright">
+          <!-- dom manipulation for copyright text -->
           <a class="copy-link scroll top text-muted" href="#"
-            >&copy Chelsey Tschida 2020</a
-          >
+            >&copy<span class="copy-link__js"></span
+          ></a>
         </p>
       </div>
     </footer>
