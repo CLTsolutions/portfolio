@@ -20,7 +20,6 @@ $('.navbar-nav>.nav-link').on('click', function () {
             >&copy Chelsey Tschida 2020</a> */
 }
 
-// const copyright = ''
 const date = new Date().getFullYear()
-const footerText = document.querySelector('.copy-link__js')
-footerText.textContent = `Chelsey Tschida ${date}`
+const footerText = document.querySelector('.copy-link')
+footerText.textContent = `© Chelsey Tschida ${date}`
