@@ -158,7 +158,7 @@ body {
 /*=========
 * DIVIDER *
 ==========*/
-/* .divider {
+.divider {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(assets/airplaneWing.jpg);
   background-color: white;
@@ -168,7 +168,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
 /* Turn off parallax scrolling for all tablets and phones. 
 Increase/decrease the pixels if needed */
@@ -178,14 +178,14 @@ Increase/decrease the pixels if needed */
   }
 }
 
-/* .divider-content {
+.divider-content {
   color: white;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .divider-caption h1 {
   font-size: 2rem;
