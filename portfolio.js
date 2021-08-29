@@ -1,5 +1,6 @@
-/* ===== NAV BAR ===== */
-
+/*======== 
+* NAVBAR *
+=========*/
 // nav bar changes color on scroll
 $(function () {
   $(document).scroll(function () {
@@ -13,13 +14,25 @@ $('.navbar-nav>.nav-link').on('click', function () {
   $('.navbar-collapse').collapse('hide')
 })
 
-/* ====== Footer ====== */
-
-{
-  /* <a class="copy-link scroll top text-muted" href="#"
-            >&copy Chelsey Tschida 2020</a> */
-}
-
+/*========= 
+ * Footer *
+ =========*/
+// makes footer date dynamic
 const date = new Date().getFullYear()
 const footerText = document.querySelector('.copy-link')
 footerText.textContent = `© Chelsey Tschida ${date}`
+
+/*========
+ *js fns *
+ ========*/
+// const navbar = document.querySelector('.navbar')
+
+// // nav bar changes color on scroll
+// window.onscroll = () => {
+//   // to see px upon scroll
+//   let top = window.scrollY
+//   // console.log(top)
+//   top >= 20
+//     ? navbar.classList.add('scrolled')
+//     : navbar.classList.remove('scrolled')
+// }
