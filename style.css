@@ -7,8 +7,9 @@
 }
 
 :root {
-  /* --color-blush-background: rgb(231, 218, 221) */
   --color-blush-background: #e7dadd;
+  --color-light-blue: #add8e7;
+  --color-dark-blue: #398c9e;
 }
 
 html {
@@ -61,7 +62,7 @@ body {
 }
 
 .nav-link.active {
-  color: #add8e7 !important;
+  color: var(--color-light-blue) !important;
   font-weight: bold;
 }
 
@@ -119,7 +120,7 @@ body {
 }
 
 .about-me-link:hover {
-  color: #add8e7;
+  color: var(--color-light-blue);
   text-decoration: none;
 }
 
@@ -139,12 +140,6 @@ body {
   fill: black;
   filter: opacity(65%);
 }
-
-/* .list-inline > li > a {
-  font-size: 3rem;
-  fill: black;
-  filter: opacity(80%);
-} */
 
 .list-inline > li > a > svg:hover {
   fill: white;
@@ -196,7 +191,7 @@ Increase/decrease the pixels if needed */
 * PROJECTS *
 ===========*/
 .card-title {
-  color: rgb(57, 140, 158);
+  color: var(--color-dark-blue);
 }
 
 .card {
@@ -208,15 +203,145 @@ Increase/decrease the pixels if needed */
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
+/*====== GRID =======*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-rows: repeat(5, 20vw); */
+  grid-gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .tile {
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+} */
+
+.tile {
+  overflow: hidden;
+}
+
+/* .tile > img {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+} */
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* position: absolute; */
+  display: block;
+}
+
+/* image? */
+.tile:nth-child(1) {
+  grid-column: span 4;
+  grid-row: span 2;
+  /* position: absolute; */
+  overflow: hidden;
+}
+
+.tile:nth-child(2),
+.tile:nth-child(3) {
+  grid-column: span 2;
+}
+
+.tile:nth-child(4),
+.tile:nth-child(5) {
+  grid-column: span 3;
+}
+
+/* END GRID */
+
+/* HOVER OVERLAY */
+.tile a {
+  text-decoration: none;
+}
+
+.description > * {
+  color: var(--color-dark-blue);
+}
+
+.description p {
+  font-size: 1.5rem;
+  /* text-align: center; */
+  padding: 5rem;
+}
+
+.description {
+  height: inherit;
+  width: inherit;
+  position: relative;
+  transform: translateY(400px);
+  transition: ease-in 1s;
+}
+.tile:hover > .description {
+  background-color: var(--color-blush-background);
+  transform: translateY(0);
+}
+
+/* .description {
+  height: inherit;
+  width: inherit;
+  position: relative;
+  transform: translateY(100%);
+}
+
+.description:hover > .info {
+  background-color: var(--color-blush-background);
+  transform: translateY(0);
+  transition: ease-in 1s;
+} */
+
+/* .description {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position relative is set on parent
+  position: absolute;
+  top and left 0 because of absolute
+  top: 0;
+  left: 0;
+  filter: opacity(20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+/* .description::before {
+  have to specify content or else won't show in browser
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-blush-background);
+  scaleY only occurs in the y direction
+  .2s is the delay
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    background-color 0.1s;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 1s;
+} */
+
+/* so line is only visible upon hover */
+/* .description:hover::before {
+  transform: scaleY(1);
+} */
+
 /*==============
 * CONTACT FORM *
 ===============*/
 #contact {
   border-top: 1px solid lightgray;
-}
-
-.container h2 {
-  padding-top: 3rem;
 }
 
 /*========
@@ -236,13 +361,24 @@ Increase/decrease the pixels if needed */
 /*===============
 * MEDIA QUERIES * 
 ================*/
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 767px) {
   .card-img-top {
     width: 100%;
     height: 45vh;
     object-fit: cover;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .tile {
+    margin-bottom: 1rem;
+  }
+
+  .container > form {
+    width: 100%;
   }
 }
 
@@ -257,7 +393,7 @@ Increase/decrease the pixels if needed */
 /* Lg devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .card-img-top {
-    /* width: 100%; */
+    width: 100%;
     height: 25vw;
     object-fit: cover;
   }
@@ -266,7 +402,7 @@ Increase/decrease the pixels if needed */
 /* XL devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .card-img-top {
-    /* width: 100%; */
+    width: 100%;
     height: 25vw;
     object-fit: cover;
   }
@@ -275,7 +411,7 @@ Increase/decrease the pixels if needed */
 /* XL devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
   .card-img-top {
-    /* width: 100%; */
+    width: 100%;
     height: 15vw;
     object-fit: cover;
   }
