@@ -44,7 +44,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav mr-auto">
-            <a class="nav-link pl-4" href="#resume">Web Developer</a>
+            <a class="nav-link p-3 pl-md-4" href="#resume">Web Developer</a>
           </div>
           <div class="navbar-nav ml-auto">
             <a class="nav-link p-3" href="#"
@@ -127,59 +127,130 @@
     <!-- <div class="container-fluid"> -->
     <!-- SKILLS LIST -->
     <div class="jumbotron jumbotron-fluid mb-0" id="skills">
-      <div class="container w-100">
-        <h1 class="display-4 text-center">SKILLS</h1>
-        <hr class="my-4" />
-        <ul class="list-inline list-unstyled text-center">
-          <li class="list-inline-item col-sm-2 col-md-2">
+      <h1 class="skills display-4 text-center">SKILLS</h1>
+      <ul
+        class="
+          skills-list
+          list-unstyled
+          d-none d-md-flex
+          justify-content-around
+          flex-wrap
+        "
+      >
+        <li class="skills-list my-3" title="HTML">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-html-five"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="CSS">
+          <svg><use xlink:href="assets/sprite.svg#icon-css3"></use></svg>
+        </li>
+        <li class="skills-list my-3" title="Javascript">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-javascript"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="Typescript">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-typescript"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="React">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-react"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="Node Js">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-node-dot-js"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="PostgreSQL">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-postgresql"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="Git">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-git"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="bootstrap">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-bootstrap"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="Tailwind">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-tailwindcss"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="Sass">
+          <svg>
+            <use xlink:href="assets/sprite.svg#icon-sass"></use>
+          </svg>
+        </li>
+        <li class="skills-list my-3" title="Github">
+          <a
+            href="https://github.com/CLTsolutions"
+            target="blank"
+            class="github-list-link"
+          >
             <svg>
-              <use xlink:href="assets/sprite.svg#icon-html-five"></use>
+              <use xlink:href="assets/sprite.svg#icon-github"></use>
             </svg>
-          </li>
-          <li class="list-inline-item col-sm-2 col-md-2">
-            <svg><use xlink:href="assets/sprite.svg#icon-css3"></use></svg>
-          </li>
-          <li class="list-inline-item col-sm-2 col-md-2">
-            <svg>
-              <use xlink:href="assets/sprite.svg#icon-javascript"></use>
-            </svg>
-          </li>
-          <li class="list-inline-item col-sm-2 col-md-2">
-            <svg>
-              <use xlink:href="assets/sprite.svg#icon-bootstrap"></use>
-            </svg>
-          </li>
-          <li class="list-inline-item col-sm-2 col-md-2">
-            <a
-              href="https://github.com/CLTsolutions"
-              target="blank"
-              class="github-list-link"
-            >
-              <svg>
-                <use xlink:href="assets/sprite.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <ul class="list-inline list-unstyled text-center">
-          <li class="list-inline-item col-sm-2 col-md-2">
-            <p class="skills-text">html</p>
-          </li>
-          <li class="list-inline-item col-sm-2 col-md-2">
-            <p class="skills-text">css</p>
-          </li>
-          <li class="list-inline-item col-sm-2 col-md-2">
-            <p class="skills-text">javascript</p>
-          </li>
-          <li class="list-inline-item col-sm-2 col-md-2">
-            <p class="skills-text">bootstrap</p>
-          </li>
-          <li class="list-inline-item col-sm-2 col-md-2">
-            <p class="skills-text">github</p>
-          </li>
-        </ul>
-        <hr class="my-4" />
-      </div>
+          </a>
+        </li>
+      </ul>
+      <ul
+        class="
+          list-inline list-unstyled
+          text-center
+          d-md-none d-sm-flex
+          flex-column
+          align-items-center
+          pt-3
+        "
+      >
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">html</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">css</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">javascript</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">typescript</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">react</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">node.js</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">PostgreSQL</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">git</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">bootstrap</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">tailwind css</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">sass</p>
+        </li>
+        <li class="list-inline-item col-sm-2 col-md-2">
+          <p class="skills-text">github</p>
+        </li>
+      </ul>
+      <hr class="my-4" />
+      <!-- </div> -->
     </div>
 
     <!-- PARALLAX SCROLLING DIVIDER -->
@@ -353,43 +424,45 @@
     <!-- CONTACT FORM -->
     <div class="container-fluid mt-3 form" id="contact">
       <h2 class="text-center mt-4">Get in Touch</h2>
-      <form
-        class="w-75 mx-auto p-5"
-        action="https://formspree.io/f/xayldgyy"
-        method="POST"
-      >
-        <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Name"
-            name="name"
-          />
-        </div>
-        <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Email"
-            name="_replyto"
-          />
-        </div>
-        <div class="form-group">
-          <textarea
-            name="message"
-            class="form-control"
-            rows="7"
-            placeholder="Message"
-          ></textarea>
-        </div>
-        <!-- your other form fields go here -->
-        <button
-          type="submit"
-          class="btn btn-outline-dark btn-md text-uppercase"
+      <div class="row">
+        <form
+          class="container row-justify-center col-lg-8 col-xl-6 my-5"
+          action="https://formspree.io/f/xayldgyy"
+          method="POST"
         >
-          Send
-        </button>
-      </form>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              name="name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email"
+              name="_replyto"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              class="form-control"
+              rows="7"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <!-- your other form fields go here -->
+          <button
+            type="submit"
+            class="btn btn-outline-dark btn-md text-uppercase"
+          >
+            Send
+          </button>
+        </form>
+      </div>
     </div>
 
     <!-- FOOTER -->

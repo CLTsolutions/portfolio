@@ -7,8 +7,8 @@
 }
 
 :root {
-  /* --color-blush-background: rgb(231, 218, 221) */
   --color-blush-background: #e7dadd;
+  --color-border-gray: #cfc4c6;
 }
 
 html {
@@ -38,7 +38,7 @@ body {
 
 .navbar.scrolled {
   background-color: #fff;
-  border-bottom: 0.1px solid lightgray;
+  border-bottom: 0.1px solid var(--color-border-gray);
 }
 
 .navbar-brand img {
@@ -86,7 +86,8 @@ body {
   background-size: cover;
 }
 
-/*-----Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed-----*/
+/*----- Turn off parallax scrolling for all tablets and phones. 
+Increase/decrease the pixels if needed -----*/
 @media only screen and (max-width: 768px) {
   .hero {
     background-attachment: scroll;
@@ -131,7 +132,13 @@ body {
   border: 1px solid var(--color-blush-background);
 }
 
+.skills {
+  padding-bottom: 1.5rem;
+  border-bottom: solid 1px var(--color-border-gray);
+}
+
 /* list items below are also targeting footer icons */
+.skills-list > li svg,
 .list-inline > li svg {
   height: 2.5rem;
   width: 2.5rem;
@@ -140,12 +147,7 @@ body {
   filter: opacity(65%);
 }
 
-/* .list-inline > li > a {
-  font-size: 3rem;
-  fill: black;
-  filter: opacity(80%);
-} */
-
+.skills-list > li > a > svg:hover,
 .list-inline > li > a > svg:hover {
   fill: white;
 }

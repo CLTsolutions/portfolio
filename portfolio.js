@@ -18,9 +18,10 @@ $('.navbar-nav>.nav-link').on('click', function () {
  * Footer *
  =========*/
 // makes footer date dynamic
+const copyright = `\xA9`
 const date = new Date().getFullYear()
 const footerText = document.querySelector('.copy-link')
-footerText.textContent = `© Chelsey Tschida ${date}`
+footerText.textContent = `${copyright} Chelsey Tschida ${date}`
 
 /*========
  *js fns *
